@@ -1,23 +1,22 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.13;
+pragma solidity >=0.7.0 <0.9.0;
 
-import "forge-std/Test.sol";
+import {Test} from "forge-std/Test.sol";
+import {MyToken} from "../src/Contract.sol";
 
-import "src/Contract.sol";
-
-contract TestContract is Test {
-    Contract c;
+contract MyTokenTest is Test {
+    MyToken private token;
 
     function setUp() public {
-        c = new Contract();
+        token = new MyToken("MyToken", "MTK");
     }
 
-    function testBar() public {
-        assertEq(uint256(1), uint256(1), "ok");
+    function testInitialSupplyAssignedToDeployer() public {
+        assertEq(token.totalSupply(), token.balanceOf(address(this)));
     }
 
-    function testFoo(uint256 x) public {
-        vm.assume(x < type(uint128).max);
-        assertEq(x + x, x * 2);
+    function testNameAndSymbol() public {
+        assertEq(token.name(), "MyToken");
+        assertEq(token.symbol(), "MTK");
     }
 }

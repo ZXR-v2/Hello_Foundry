@@ -1,0 +1,13 @@
+Compiling 1 files with Solc 0.8.29
+Solc 0.8.29 finished in 1.96s
+Compiler run successful!
+
+Ran 5 tests for test/Bank.t.sol:BankTest
+[PASS] testDepositTracksBalancesAndTotals() (gas: 159558)
+[PASS] testLeaderboardForOneToFourUsers() (gas: 361594)
+[PASS] testLeaderboardUpdatesWhenUserDepositsAgain() (gas: 397381)
+[PASS] testOnlyOwnerCanWithdraw() (gas: 213068)
+[PASS] testReceiveTracksDirectWalletTransfer() (gas: 128720)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 6.74ms (6.74ms CPU time)
+
+Ran 1 test suite in 303.68ms (6.74ms CPU time): 5 tests passed, 0 failed, 0 skipped (5 total tests)
