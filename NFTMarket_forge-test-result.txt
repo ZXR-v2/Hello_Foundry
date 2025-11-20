@@ -1,0 +1,16 @@
+No files changed, compilation skipped
+
+Ran 10 tests for test/NFTMarket.t.sol:NFTMarketTest
+[PASS] testFuzz_ListAndBuy_WithRandomPriceAndBuyer(uint128,address) (runs: 257, μ: 532249, ~: 531550)
+[PASS] test_Buy_Fails_BuyOwnNFT() (gas: 205399)
+[PASS] test_Buy_Fails_InsufficientPayment() (gas: 207883)
+[PASS] test_Buy_Fails_RepeatedBuy() (gas: 281446)
+[PASS] test_Buy_Success_OverpayRefund() (gas: 246420)
+[PASS] test_Buy_Success_WithCallback() (gas: 248304)
+[PASS] test_List_Fails_NotOwner() (gas: 26265)
+[PASS] test_List_Fails_ZeroPrice() (gas: 53525)
+[PASS] test_List_Success() (gas: 168148)
+[PASS] test_MarketNeverHoldsTokenAfterTrades() (gas: 446343)
+Suite result: ok. 10 passed; 0 failed; 0 skipped; finished in 370.16ms (373.86ms CPU time)
+
+Ran 1 test suite in 370.90ms (370.16ms CPU time): 10 tests passed, 0 failed, 0 skipped (10 total tests)
