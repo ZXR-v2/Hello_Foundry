@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.29;
+pragma solidity ^0.8.25;
 
 import {Script} from "forge-std/Script.sol";
 import {MyToken} from "src/Contract.sol";

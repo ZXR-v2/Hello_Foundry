@@ -1,0 +1,11 @@
+.env.example
+PRIVATE_KEY=YOUR_PRIVATE_KEY_HERE
+
+.gitignore
+.env
+.secret
+
+scripts/deploy.sh
+#!/bin/bash
+source .env
+forge script scripts/Deployment.s.sol --rpc-url http://127.0.0.1:8545 --broadcast --private-key $PRIVATE_KEY
